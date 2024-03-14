@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct AirUSADataApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+
+            let networking = Networking()
+            let nationService = NationService(networking: networking)
+            let nationViewModel = NationViewModel(nationService: nationService)
+
+            MainView(nationViewModel: nationViewModel)
         }
     }
 }
