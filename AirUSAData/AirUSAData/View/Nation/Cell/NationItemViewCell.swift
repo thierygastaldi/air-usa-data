@@ -1,5 +1,5 @@
 //
-//  PopulationViewCell.swift
+//  NationItemViewCell.swift
 //  AirUSAData
 //
 //  Created by Thiery Ribeiro on 14/03/2024.
@@ -7,28 +7,28 @@
 
 import SwiftUI
 
-struct PopulationViewCell: View {
+struct NationItemViewCell: View {
 
-    let viewModel: PopulationCellViewModel
+    let populationItem: NationViewModel.PopulationItem
 
     var body: some View {
         HStack {
 
             VStack(alignment: .leading) {
                 Text(Image(systemName: "flag.2.crossed.circle.fill"))
-                Text("\(viewModel.nation)")
+                Text("\(populationItem.nation)")
             }.padding()
 
             Spacer()
 
-            VStack(alignment: .leading) {
+            VStack(alignment: .trailing) {
                 Text(Image(systemName: "person.3.sequence.fill"))
-                Text("\(viewModel.popupation)")
+                Text("\(populationItem.popupation)")
             }.padding()
         }
         .overlay {
             HStack {
-                Text("\(viewModel.year)")
+                Text("\(populationItem.year)")
             }
         }
         .background(Color.gray.opacity(0.2))
@@ -36,12 +36,12 @@ struct PopulationViewCell: View {
         .padding(EdgeInsets(top: 0.0, leading: 16.0, bottom: 8.0, trailing: 16.0))
     }
 
-    init(viewModel: PopulationCellViewModel) {
-        self.viewModel = viewModel
+    init(populationItem: NationViewModel.PopulationItem) {
+        self.populationItem = populationItem
     }
 }
 
 #Preview {
-    let viewModel = PopulationCellViewModel(nation: "Portugal", popupation: "1000", year: "2024")
-    return PopulationViewCell(viewModel: viewModel)
+    let populationItem = NationViewModel.PopulationItem(nation: "Portugal", popupation: "1000", year: "2024")
+    return NationItemViewCell(populationItem: populationItem)
 }

@@ -20,15 +20,4 @@ extension NationPopulationData {
     }
 }
 
-private extension NationPopulation {
-
-    init(id: String, nation: String, year: Int, population: Int) {
-
-        self.id = id
-        self.nation = nation
-        self.year = year
-        self.population = population
-    }
-}
-
 #endif

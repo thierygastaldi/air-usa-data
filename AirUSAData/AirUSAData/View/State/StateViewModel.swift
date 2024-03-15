@@ -1,22 +1,22 @@
 //
-//  NationViewModel.swift
+//  StateViewModel.swift
 //  AirUSAData
 //
-//  Created by Thiery Ribeiro on 14/03/2024.
+//  Created by Thiery Ribeiro on 15/03/2024.
 //
 
 import Foundation
 
 @Observable
-class NationViewModel {
+class StateViewModel {
 
-    private let nationService: NationServiceProtocol
+    private let stateService: StateServiceProtocol
     private(set) var populationItems: [PopulationItem] = []
     var state: State = .loading
 
-    init(nationService: NationServiceProtocol) {
+    init(stateService: StateServiceProtocol) {
 
-        self.nationService = nationService
+        self.stateService = stateService
     }
 
     func prepare() async {
@@ -33,7 +33,7 @@ class NationViewModel {
 }
 
 // MARK: - View State
-extension NationViewModel {
+extension StateViewModel {
 
     enum State {
 
@@ -44,15 +44,15 @@ extension NationViewModel {
 }
 
 // MARK: - Private
-private extension NationViewModel {
+private extension StateViewModel {
 
     func fetchData() async {
 
         do {
 
-            let data = try await self.nationService.fetchNationPopulationData().data
+            let data = try await self.stateService.fetchStatePopulationData().data
 
-            self.populationItems = data.compactMap { PopulationItem(nationPopulation: $0) }
+            self.populationItems = data.compactMap { PopulationItem(statePopulation: $0) }
 
             self.state = .loaded
 

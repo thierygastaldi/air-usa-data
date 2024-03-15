@@ -1,15 +1,15 @@
 //
-//  NationView.swift
+//  StateView.swift
 //  AirUSAData
 //
-//  Created by Thiery Ribeiro on 14/03/2024.
+//  Created by Thiery Ribeiro on 15/03/2024.
 //
 
 import SwiftUI
 
-struct NationView: View {
-    
-    @State private var viewModel: NationViewModel
+struct StateView: View {
+
+    @State private var viewModel: StateViewModel
 
     var body: some View {
         NavigationStack {
@@ -29,18 +29,17 @@ struct NationView: View {
                 }
 
             case .loaded:
-                HeaderViewCell(leftTitle: "Nation", centerTitle: "Year", rightTitle: "Population")
+                HeaderViewCell(leftTitle: "State", centerTitle: "", rightTitle: "Population")
 
                 ScrollView(.vertical, showsIndicators: false) {
-
                     LazyVStack {
                         ForEach(self.viewModel.populationItems, id: \.self) { item in
 
-                            NationItemViewCell(populationItem: item)
+                            StateItemViewCell(populationItem: item)
                         }
                     }
                 }
-                .navigationTitle("Nation Data")
+                .navigationTitle("State Data")
                 .navigationBarTitleDisplayMode(.inline)
 
             case .loading:
@@ -50,14 +49,14 @@ struct NationView: View {
         .task { await self.viewModel.prepare() }
     }
 
-    init(viewModel: NationViewModel) {
+    init(viewModel: StateViewModel) {
 
         self.viewModel = viewModel
     }
 }
 
 #Preview {
-    let service = PreviewNationService()
-    let viewModel = NationViewModel(nationService: service)
-    return NationView(viewModel: viewModel)
+    let service = PreviewStateService()
+    let viewModel = StateViewModel(stateService: service)
+    return StateView(viewModel: viewModel)
 }

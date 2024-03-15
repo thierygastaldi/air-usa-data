@@ -10,7 +10,7 @@
 		8EB55E022BA374C800664576 /* AirUSADataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E012BA374C800664576 /* AirUSADataApp.swift */; };
 		8EB55E062BA374C900664576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB55E052BA374C900664576 /* Assets.xcassets */; };
 		8EB55E092BA374C900664576 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB55E082BA374C900664576 /* Preview Assets.xcassets */; };
-		8EB55E132BA374CC00664576 /* AirUSADataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E122BA374CC00664576 /* AirUSADataTests.swift */; };
+		8EB55E132BA374CC00664576 /* StateViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E122BA374CC00664576 /* StateViewModelTests.swift */; };
 		8EB55E1D2BA374CC00664576 /* AirUSADataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E1C2BA374CC00664576 /* AirUSADataUITests.swift */; };
 		8EB55E1F2BA374CC00664576 /* AirUSADataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E1E2BA374CC00664576 /* AirUSADataUITestsLaunchTests.swift */; };
 		8EB55E2D2BA3758000664576 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E2C2BA3758000664576 /* Networking.swift */; };
@@ -20,13 +20,24 @@
 		8EB55E392BA37D6400664576 /* Networking+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E382BA37D6400664576 /* Networking+Error.swift */; };
 		8EB55E402BA381FE00664576 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E3F2BA381FE00664576 /* MainView.swift */; };
 		8EB55E432BA3823400664576 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E422BA3823400664576 /* MainViewModel.swift */; };
-		8EB55E462BA388A600664576 /* PreviewNationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E452BA388A600664576 /* PreviewNationService.swift */; };
+		8EB55E462BA388A600664576 /* PreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E452BA388A600664576 /* PreviewService.swift */; };
 		8EB55E482BA3890200664576 /* NationPopulationDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E472BA3890200664576 /* NationPopulationDataMock.swift */; };
-		8EB55E4A2BA38F5500664576 /* PopulationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E492BA38F5500664576 /* PopulationViewCell.swift */; };
-		8EB55E4D2BA3930700664576 /* PopulationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E4C2BA3930700664576 /* PopulationCellViewModel.swift */; };
-		8EB55E4F2BA3A04200664576 /* PopulationHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E4E2BA3A04200664576 /* PopulationHeaderViewCell.swift */; };
+		8EB55E4A2BA38F5500664576 /* NationItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E492BA38F5500664576 /* NationItemViewCell.swift */; };
+		8EB55E4D2BA3930700664576 /* NationViewModel+PopulationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E4C2BA3930700664576 /* NationViewModel+PopulationItem.swift */; };
+		8EB55E4F2BA3A04200664576 /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E4E2BA3A04200664576 /* HeaderViewCell.swift */; };
 		8EB55E532BA3AE0800664576 /* NationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E522BA3AE0800664576 /* NationView.swift */; };
 		8EB55E552BA3AE3700664576 /* NationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E542BA3AE3700664576 /* NationViewModel.swift */; };
+		8EB55E572BA44D2500664576 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E562BA44D2500664576 /* StateView.swift */; };
+		8EB55E592BA44D3500664576 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E582BA44D3500664576 /* StateViewModel.swift */; };
+		8EB55E5B2BA44D4900664576 /* StateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E5A2BA44D4900664576 /* StateService.swift */; };
+		8EB55E5D2BA44F6000664576 /* StatePopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E5C2BA44F6000664576 /* StatePopulation.swift */; };
+		8EB55E5F2BA44F7000664576 /* StatePopulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E5E2BA44F7000664576 /* StatePopulationData.swift */; };
+		8EB55E612BA450AF00664576 /* StateViewModel+PopulationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E602BA450AF00664576 /* StateViewModel+PopulationItem.swift */; };
+		8EB55E632BA4AADD00664576 /* StatePopulationDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E622BA4AADD00664576 /* StatePopulationDataMock.swift */; };
+		8EB55E662BA4AD9B00664576 /* StateItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E652BA4AD9B00664576 /* StateItemViewCell.swift */; };
+		8EB55E6B2BA4B99700664576 /* StateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6A2BA4B99700664576 /* StateServiceMock.swift */; };
+		8EB55E6D2BA4BAA700664576 /* NationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */; };
+		8EB55E6F2BA4BE5B00664576 /* NationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +63,7 @@
 		8EB55E052BA374C900664576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB55E082BA374C900664576 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EB55E0E2BA374CC00664576 /* AirUSADataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirUSADataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB55E122BA374CC00664576 /* AirUSADataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirUSADataTests.swift; sourceTree = "<group>"; };
+		8EB55E122BA374CC00664576 /* StateViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModelTests.swift; sourceTree = "<group>"; };
 		8EB55E182BA374CC00664576 /* AirUSADataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirUSADataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB55E1C2BA374CC00664576 /* AirUSADataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirUSADataUITests.swift; sourceTree = "<group>"; };
 		8EB55E1E2BA374CC00664576 /* AirUSADataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirUSADataUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -63,13 +74,24 @@
 		8EB55E382BA37D6400664576 /* Networking+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+Error.swift"; sourceTree = "<group>"; };
 		8EB55E3F2BA381FE00664576 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8EB55E422BA3823400664576 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		8EB55E452BA388A600664576 /* PreviewNationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewNationService.swift; sourceTree = "<group>"; };
+		8EB55E452BA388A600664576 /* PreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewService.swift; sourceTree = "<group>"; };
 		8EB55E472BA3890200664576 /* NationPopulationDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationPopulationDataMock.swift; sourceTree = "<group>"; };
-		8EB55E492BA38F5500664576 /* PopulationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewCell.swift; sourceTree = "<group>"; };
-		8EB55E4C2BA3930700664576 /* PopulationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationCellViewModel.swift; sourceTree = "<group>"; };
-		8EB55E4E2BA3A04200664576 /* PopulationHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationHeaderViewCell.swift; sourceTree = "<group>"; };
+		8EB55E492BA38F5500664576 /* NationItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationItemViewCell.swift; sourceTree = "<group>"; };
+		8EB55E4C2BA3930700664576 /* NationViewModel+PopulationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NationViewModel+PopulationItem.swift"; sourceTree = "<group>"; };
+		8EB55E4E2BA3A04200664576 /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
 		8EB55E522BA3AE0800664576 /* NationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationView.swift; sourceTree = "<group>"; };
 		8EB55E542BA3AE3700664576 /* NationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationViewModel.swift; sourceTree = "<group>"; };
+		8EB55E562BA44D2500664576 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		8EB55E582BA44D3500664576 /* StateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
+		8EB55E5A2BA44D4900664576 /* StateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateService.swift; sourceTree = "<group>"; };
+		8EB55E5C2BA44F6000664576 /* StatePopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePopulation.swift; sourceTree = "<group>"; };
+		8EB55E5E2BA44F7000664576 /* StatePopulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePopulationData.swift; sourceTree = "<group>"; };
+		8EB55E602BA450AF00664576 /* StateViewModel+PopulationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateViewModel+PopulationItem.swift"; sourceTree = "<group>"; };
+		8EB55E622BA4AADD00664576 /* StatePopulationDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePopulationDataMock.swift; sourceTree = "<group>"; };
+		8EB55E652BA4AD9B00664576 /* StateItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateItemViewCell.swift; sourceTree = "<group>"; };
+		8EB55E6A2BA4B99700664576 /* StateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateServiceMock.swift; sourceTree = "<group>"; };
+		8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationServiceMock.swift; sourceTree = "<group>"; };
+		8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				8EB55E082BA374C900664576 /* Preview Assets.xcassets */,
-				8EB55E452BA388A600664576 /* PreviewNationService.swift */,
+				8EB55E452BA388A600664576 /* PreviewService.swift */,
 				8EB55E472BA3890200664576 /* NationPopulationDataMock.swift */,
+				8EB55E622BA4AADD00664576 /* StatePopulationDataMock.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -144,7 +167,8 @@
 		8EB55E112BA374CC00664576 /* AirUSADataTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EB55E122BA374CC00664576 /* AirUSADataTests.swift */,
+				8EB55E692BA4B96900664576 /* Mock */,
+				8EB55E682BA4B8D200664576 /* ViewModel */,
 			);
 			path = AirUSADataTests;
 			sourceTree = "<group>";
@@ -171,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB55E312BA37ACF00664576 /* NationService.swift */,
+				8EB55E5A2BA44D4900664576 /* StateService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +205,8 @@
 			children = (
 				8EB55E342BA37B8D00664576 /* NationPopulation.swift */,
 				8EB55E362BA37BF800664576 /* NationPopulationData.swift */,
+				8EB55E5C2BA44F6000664576 /* StatePopulation.swift */,
+				8EB55E5E2BA44F7000664576 /* StatePopulationData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +214,7 @@
 		8EB55E3C2BA3815100664576 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EB55E672BA4ADA300664576 /* Reusable */,
 				8EB55E512BA3ADEC00664576 /* State */,
 				8EB55E502BA3ADDE00664576 /* Nation */,
 				8EB55E412BA3822200664576 /* Main */,
@@ -206,9 +234,7 @@
 		8EB55E4B2BA3912D00664576 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				8EB55E492BA38F5500664576 /* PopulationViewCell.swift */,
-				8EB55E4E2BA3A04200664576 /* PopulationHeaderViewCell.swift */,
-				8EB55E4C2BA3930700664576 /* PopulationCellViewModel.swift */,
+				8EB55E492BA38F5500664576 /* NationItemViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -219,6 +245,7 @@
 				8EB55E4B2BA3912D00664576 /* Cell */,
 				8EB55E522BA3AE0800664576 /* NationView.swift */,
 				8EB55E542BA3AE3700664576 /* NationViewModel.swift */,
+				8EB55E4C2BA3930700664576 /* NationViewModel+PopulationItem.swift */,
 			);
 			path = Nation;
 			sourceTree = "<group>";
@@ -226,8 +253,46 @@
 		8EB55E512BA3ADEC00664576 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				8EB55E642BA4AC1600664576 /* Cell */,
+				8EB55E562BA44D2500664576 /* StateView.swift */,
+				8EB55E582BA44D3500664576 /* StateViewModel.swift */,
+				8EB55E602BA450AF00664576 /* StateViewModel+PopulationItem.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		8EB55E642BA4AC1600664576 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8EB55E652BA4AD9B00664576 /* StateItemViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8EB55E672BA4ADA300664576 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				8EB55E4E2BA3A04200664576 /* HeaderViewCell.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		8EB55E682BA4B8D200664576 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EB55E122BA374CC00664576 /* StateViewModelTests.swift */,
+				8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EB55E692BA4B96900664576 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				8EB55E6A2BA4B99700664576 /* StateServiceMock.swift */,
+				8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,15 +431,23 @@
 				8EB55E372BA37BF800664576 /* NationPopulationData.swift in Sources */,
 				8EB55E2D2BA3758000664576 /* Networking.swift in Sources */,
 				8EB55E322BA37ACF00664576 /* NationService.swift in Sources */,
+				8EB55E5D2BA44F6000664576 /* StatePopulation.swift in Sources */,
+				8EB55E592BA44D3500664576 /* StateViewModel.swift in Sources */,
+				8EB55E572BA44D2500664576 /* StateView.swift in Sources */,
 				8EB55E532BA3AE0800664576 /* NationView.swift in Sources */,
+				8EB55E5F2BA44F7000664576 /* StatePopulationData.swift in Sources */,
 				8EB55E022BA374C800664576 /* AirUSADataApp.swift in Sources */,
+				8EB55E632BA4AADD00664576 /* StatePopulationDataMock.swift in Sources */,
 				8EB55E482BA3890200664576 /* NationPopulationDataMock.swift in Sources */,
-				8EB55E4F2BA3A04200664576 /* PopulationHeaderViewCell.swift in Sources */,
-				8EB55E4D2BA3930700664576 /* PopulationCellViewModel.swift in Sources */,
-				8EB55E462BA388A600664576 /* PreviewNationService.swift in Sources */,
+				8EB55E662BA4AD9B00664576 /* StateItemViewCell.swift in Sources */,
+				8EB55E612BA450AF00664576 /* StateViewModel+PopulationItem.swift in Sources */,
+				8EB55E4F2BA3A04200664576 /* HeaderViewCell.swift in Sources */,
+				8EB55E4D2BA3930700664576 /* NationViewModel+PopulationItem.swift in Sources */,
+				8EB55E462BA388A600664576 /* PreviewService.swift in Sources */,
 				8EB55E352BA37B8D00664576 /* NationPopulation.swift in Sources */,
 				8EB55E432BA3823400664576 /* MainViewModel.swift in Sources */,
-				8EB55E4A2BA38F5500664576 /* PopulationViewCell.swift in Sources */,
+				8EB55E4A2BA38F5500664576 /* NationItemViewCell.swift in Sources */,
+				8EB55E5B2BA44D4900664576 /* StateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB55E132BA374CC00664576 /* AirUSADataTests.swift in Sources */,
+				8EB55E132BA374CC00664576 /* StateViewModelTests.swift in Sources */,
+				8EB55E6F2BA4BE5B00664576 /* NationViewModelTests.swift in Sources */,
+				8EB55E6D2BA4BAA700664576 /* NationServiceMock.swift in Sources */,
+				8EB55E6B2BA4B99700664576 /* StateServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

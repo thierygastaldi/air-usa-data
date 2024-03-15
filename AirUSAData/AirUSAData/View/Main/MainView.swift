@@ -10,22 +10,34 @@ import SwiftUI
 struct MainView: View {
 
     private let nationViewModel: NationViewModel
+    private let stateViewModel: StateViewModel
 
     var body: some View {
         TabView {
+
             NationView(viewModel: self.nationViewModel).tabItem {
                 Label("Nation", systemImage: "flag.2.crossed.circle.fill")
+            }
+
+            StateView(viewModel: self.stateViewModel).tabItem {
+                Label("State", systemImage: "poweroutlet.type.a")
             }
         }
     }
 
-    init(nationViewModel: NationViewModel) {
+    init(nationViewModel: NationViewModel, stateViewModel: StateViewModel) {
+
         self.nationViewModel = nationViewModel
+        self.stateViewModel = stateViewModel
     }
 }
 
 #Preview {
-    let service = PreviewNationService()
-    let nationViewModel = NationViewModel(nationService: service)
-    return MainView(nationViewModel: nationViewModel)
+    let nationService = PreviewNationService()
+    let nationViewModel = NationViewModel(nationService: nationService)
+
+    let stateService = PreviewStateService()
+    let stateViewModel = StateViewModel(stateService: stateService)
+
+    return MainView(nationViewModel: nationViewModel, stateViewModel: stateViewModel)
 }

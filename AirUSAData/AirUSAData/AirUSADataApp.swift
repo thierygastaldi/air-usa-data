@@ -14,10 +14,16 @@ struct AirUSADataApp: App {
         WindowGroup {
 
             let networking = Networking()
+
+            // Nation
             let nationService = NationService(networking: networking)
             let nationViewModel = NationViewModel(nationService: nationService)
 
-            MainView(nationViewModel: nationViewModel)
+            // State
+            let stateService = StateService(networking: networking)
+            let stateViewModel = StateViewModel(stateService: stateService)
+
+            MainView(nationViewModel: nationViewModel, stateViewModel: stateViewModel)
         }
     }
 }
