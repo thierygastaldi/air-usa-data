@@ -24,9 +24,9 @@ final class NationService: NationServiceProtocol {
     func fetchNationPopulationData() async throws -> NationPopulationData {
 
         var components = URLComponents()
-        components.scheme = "https"
-        components.host = "datausa.io"
-        components.path = "/api/data"
+        components.scheme = ServiceConstants.scheme
+        components.host = ServiceConstants.host
+        components.path = ServiceConstants.path
 
         let drilldownsQueryItem = URLQueryItem(name: "drilldowns", value: "Nation")
         let measuresQueryItem = URLQueryItem(name: "measures", value: "Population")

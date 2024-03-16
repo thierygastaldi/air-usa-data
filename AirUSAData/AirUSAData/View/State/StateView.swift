@@ -17,16 +17,7 @@ struct StateView: View {
             switch self.viewModel.state {
 
             case .error:
-                VStack {
-
-                    Text("Error! Please, try again...")
-
-                    Button("Retry") {
-                        Task { await viewModel.retry() }
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .padding(16)
-                }
+                ErrorView(retryButtonAction: { Task { await self.viewModel.retry() } })
 
             case .loaded:
                 HeaderViewCell(leftTitle: "State", centerTitle: "", rightTitle: "Population")

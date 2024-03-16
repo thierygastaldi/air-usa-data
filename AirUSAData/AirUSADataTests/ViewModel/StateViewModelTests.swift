@@ -35,6 +35,8 @@ final class StateViewModelTests: XCTestCase {
 
         XCTAssertEqual(self.stateViewModel.state, .loaded)
         XCTAssertEqual(self.stateViewModel.populationItems.count, 2)
+        XCTAssertEqual(self.stateViewModel.populationItems[0].popupation, "One thousand")
+        XCTAssertEqual(self.stateViewModel.populationItems[1].popupation, "~2 thousands")
     }
 
     func testPrepareGoesToErrorStateOnError() async {

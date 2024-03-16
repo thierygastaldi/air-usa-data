@@ -38,6 +38,10 @@
 		8EB55E6B2BA4B99700664576 /* StateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6A2BA4B99700664576 /* StateServiceMock.swift */; };
 		8EB55E6D2BA4BAA700664576 /* NationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */; };
 		8EB55E6F2BA4BE5B00664576 /* NationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */; };
+		8EB55E732BA5DBEC00664576 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E722BA5DBEC00664576 /* Int+Extension.swift */; };
+		8EB55E782BA5E3F600664576 /* IntegerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E772BA5E3F500664576 /* IntegerExtensionTests.swift */; };
+		8EB55E7A2BA5EC5600664576 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E792BA5EC5600664576 /* ErrorView.swift */; };
+		8EB55E7C2BA5EE5900664576 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB55E7B2BA5EE5900664576 /* ServiceConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,10 @@
 		8EB55E6A2BA4B99700664576 /* StateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateServiceMock.swift; sourceTree = "<group>"; };
 		8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationServiceMock.swift; sourceTree = "<group>"; };
 		8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationViewModelTests.swift; sourceTree = "<group>"; };
+		8EB55E722BA5DBEC00664576 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		8EB55E772BA5E3F500664576 /* IntegerExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerExtensionTests.swift; sourceTree = "<group>"; };
+		8EB55E792BA5EC5600664576 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8EB55E7B2BA5EE5900664576 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 		8EB55E002BA374C800664576 /* AirUSAData */ = {
 			isa = PBXGroup;
 			children = (
+				8EB55E712BA5DB7B00664576 /* Utils */,
 				8EB55E3C2BA3815100664576 /* View */,
 				8EB55E332BA37B2300664576 /* Model */,
 				8EB55E302BA3795F00664576 /* Service */,
@@ -196,6 +205,7 @@
 			children = (
 				8EB55E312BA37ACF00664576 /* NationService.swift */,
 				8EB55E5A2BA44D4900664576 /* StateService.swift */,
+				8EB55E7B2BA5EE5900664576 /* ServiceConstants.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -273,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB55E4E2BA3A04200664576 /* HeaderViewCell.swift */,
+				8EB55E792BA5EC5600664576 /* ErrorView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -282,6 +293,7 @@
 			children = (
 				8EB55E122BA374CC00664576 /* StateViewModelTests.swift */,
 				8EB55E6E2BA4BE5B00664576 /* NationViewModelTests.swift */,
+				8EB55E772BA5E3F500664576 /* IntegerExtensionTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,6 +305,14 @@
 				8EB55E6C2BA4BAA700664576 /* NationServiceMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		8EB55E712BA5DB7B00664576 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8EB55E722BA5DBEC00664576 /* Int+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB55E7A2BA5EC5600664576 /* ErrorView.swift in Sources */,
+				8EB55E7C2BA5EE5900664576 /* ServiceConstants.swift in Sources */,
 				8EB55E392BA37D6400664576 /* Networking+Error.swift in Sources */,
 				8EB55E402BA381FE00664576 /* MainView.swift in Sources */,
 				8EB55E552BA3AE3700664576 /* NationViewModel.swift in Sources */,
@@ -444,6 +466,7 @@
 				8EB55E4F2BA3A04200664576 /* HeaderViewCell.swift in Sources */,
 				8EB55E4D2BA3930700664576 /* NationViewModel+PopulationItem.swift in Sources */,
 				8EB55E462BA388A600664576 /* PreviewService.swift in Sources */,
+				8EB55E732BA5DBEC00664576 /* Int+Extension.swift in Sources */,
 				8EB55E352BA37B8D00664576 /* NationPopulation.swift in Sources */,
 				8EB55E432BA3823400664576 /* MainViewModel.swift in Sources */,
 				8EB55E4A2BA38F5500664576 /* NationItemViewCell.swift in Sources */,
@@ -457,6 +480,7 @@
 			files = (
 				8EB55E132BA374CC00664576 /* StateViewModelTests.swift in Sources */,
 				8EB55E6F2BA4BE5B00664576 /* NationViewModelTests.swift in Sources */,
+				8EB55E782BA5E3F600664576 /* IntegerExtensionTests.swift in Sources */,
 				8EB55E6D2BA4BAA700664576 /* NationServiceMock.swift in Sources */,
 				8EB55E6B2BA4B99700664576 /* StateServiceMock.swift in Sources */,
 			);

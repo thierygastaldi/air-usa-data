@@ -35,9 +35,7 @@ struct MainView: View {
 #Preview {
     let nationService = PreviewNationService()
     let nationViewModel = NationViewModel(nationService: nationService)
-
     let stateService = PreviewStateService()
     let stateViewModel = StateViewModel(stateService: stateService)
-
     return MainView(nationViewModel: nationViewModel, stateViewModel: stateViewModel)
 }

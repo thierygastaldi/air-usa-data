@@ -26,7 +26,7 @@ extension NationViewModel {
         init(nationPopulation: NationPopulation) {
 
             self.nation = nationPopulation.nation
-            self.popupation = String(nationPopulation.population/1000000) + " millions"
+            self.popupation = nationPopulation.population.formattedPopulation
             self.year = String(nationPopulation.year)
         }
 

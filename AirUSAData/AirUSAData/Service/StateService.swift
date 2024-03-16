@@ -24,9 +24,9 @@ final class StateService: StateServiceProtocol {
     func fetchStatePopulationData() async throws -> StatePopulationData {
 
         var components = URLComponents()
-        components.scheme = "https"
-        components.host = "datausa.io"
-        components.path = "/api/data"
+        components.scheme = ServiceConstants.scheme
+        components.host = ServiceConstants.host
+        components.path = ServiceConstants.path
 
         let drilldownsQueryItem = URLQueryItem(name: "drilldowns", value: "State")
         let measuresQueryItem = URLQueryItem(name: "measures", value: "Population")

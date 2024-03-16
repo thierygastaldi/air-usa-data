@@ -24,7 +24,7 @@ extension StateViewModel {
         init(statePopulation: StatePopulation) {
 
             self.state = statePopulation.state
-            self.popupation = String(statePopulation.population/1000000) + " millions"
+            self.popupation = statePopulation.population.formattedPopulation
         }
 
         static func == (lhs: PopulationItem, rhs: PopulationItem) -> Bool {

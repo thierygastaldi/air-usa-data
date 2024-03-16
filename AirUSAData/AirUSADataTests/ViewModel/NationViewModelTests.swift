@@ -23,8 +23,8 @@ final class NationViewModelTests: XCTestCase {
 
         self.nationService.fetchNationPopulationDataStub = {
 
-            let nationPopulation1 = NationPopulation(id: "1", nation: "Alabama", year: 2021, population: 1000)
-            let nationPopulation2 = NationPopulation(id: "2", nation: "Texas", year: 2021, population: 2000)
+            let nationPopulation1 = NationPopulation(id: "1", nation: "Alabama", year: 2021, population: 1000000)
+            let nationPopulation2 = NationPopulation(id: "2", nation: "Texas", year: 2021, population: 20000000)
 
             return NationPopulationData(data: [nationPopulation1, nationPopulation2])
         }
@@ -35,6 +35,8 @@ final class NationViewModelTests: XCTestCase {
 
         XCTAssertEqual(self.nationViewModel.state, .loaded)
         XCTAssertEqual(self.nationViewModel.populationItems.count, 2)
+        XCTAssertEqual(self.nationViewModel.populationItems[0].popupation, "One million")
+        XCTAssertEqual(self.nationViewModel.populationItems[1].popupation, "~20 millions")
     }
 
     func testPrepareGoesToErrorStateOnError() async {
